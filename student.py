@@ -42,7 +42,7 @@ class Student:
         )
 
         for user in users:
-            if user("email") == email:
+            if user["email"] == email:
                 return False , "Email already exists"
             
         student = Student(
