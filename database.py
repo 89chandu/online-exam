@@ -23,4 +23,3 @@ class Database:
             json.dump(data , file , indent=4)     
         
 
-

@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "question_id": 1,
+        "question": "What is Python?",
+        "option_a": "Programming Language",
+        "option_b": "Animal",
+        "option_c": "Browser",
+        "option_d": "Editor",
+        "correct_answer": "Programming Language",
+        "marks": 1
+    }
+]
