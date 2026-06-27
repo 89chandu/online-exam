@@ -73,7 +73,7 @@ class Question:
         )
 
         questions.append(new_question.to_dict())
-        Database.savedata(cls.FILE_NAME)
+        Database.savedata(cls.FILE_NAME,questions)
 
         return True , "Question Added Sucessfully"
     

@@ -42,7 +42,7 @@ class Test:
         
         tests = Database.load_data(cls.FILE_NAME)
 
-        for test in test:
+        for test in tests:
             if test["test_id"] == test_id:
                 return False , "Test is already exists"
             
@@ -65,7 +65,14 @@ class Test:
         return True, "Test Created Successfully"
     
     @classmethod
-    def get_all_tests(cls,test_id):
+    def get_all_tests(cls):
+
+         return Database.load_data(
+            cls.FILE_NAME
+        )  
+
+    @classmethod
+    def get_test(cls,test_id):
 
         tests =  Database.load_data(
             cls.FILE_NAME
@@ -76,7 +83,7 @@ class Test:
             if test["test_id"] == test_id:
                 return test
             
-        return None    
+        return None 
     
 
     @classmethod

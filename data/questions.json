@@ -8,5 +8,15 @@
         "option_d": "Editor",
         "correct_answer": "Programming Language",
         "marks": 1
+    },
+    {
+        "question_id": 2,
+        "question": "What is Java ?",
+        "option_a": "P L",
+        "option_b": "Coffee",
+        "option_c": "Browser",
+        "option_d": "Editor",
+        "correct_answer": "P L",
+        "marks": 1
     }
 ]
