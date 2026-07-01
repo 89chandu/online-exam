@@ -146,6 +146,7 @@ if user["role"] == "admin":
             "Dashboard",
             "Add Question",
             "View Question"
+            "Create Question"
         ]
     )
 
