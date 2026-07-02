@@ -296,6 +296,57 @@ elif menu == "View Question":
 
     st.title("View Question")
 
+    questions  = Question.get_all_questions()
+
+    if len(questions) == 0:
+        st.warning("No Questions Found") 
+
+    else:
+
+        for q in questions:
+
+            with st.expander(f"Question ID : {q['question_id']}"):   
+
+                st.write(f"**Question :** {q['question']}")
+
+                st.write(f"A. {[q['option_a']]}")
+                st.write(f"B. {[q['option_b']]}")
+                st.write(f"C. {[q['option_c']]}")
+                st.write(f"D. {[q['option_d']]}")
+
+
+                st.success(
+                    f"Correct Answer : {q["correct_answer"]}"
+                )
+
+                st.write(
+                    f"Marks : {q["marks"]}"
+                )
+
+    st.divider()
+
+
+    st.subheader(" 🗑️ Delete Question")
+
+    delete_id = st.number_input(
+        "Enter Question ID",
+        step = 1,
+        key="delete_question"
+    )
+
+    if st.button("Delete Question"):
+
+        result = Question.delete_question(delete_id)
+
+        if result:
+            st.success("Question Deleted Successfully")
+
+            st.rerun()
+        else:
+            st.error("Question ID Not Found")    
+        
+
+
 
 
 

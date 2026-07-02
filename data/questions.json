@@ -20,13 +20,13 @@
         "marks": 1
     },
     {
-        "question_id": 6,
-        "question": "Balaghat konse state me hai ?",
-        "option_a": "MP",
-        "option_b": "CG",
-        "option_c": "MH",
-        "option_d": "UP",
-        "correct_answer": "MP",
+        "question_id": 4,
+        "question": "What is coding ?",
+        "option_a": "Line by Line instruction ",
+        "option_b": "Writing Code",
+        "option_c": "Giving Instruction",
+        "option_d": "All of them",
+        "correct_answer": "Line by Line instruction ",
         "marks": 1
     }
 ]
