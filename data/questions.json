@@ -18,5 +18,15 @@
         "option_d": "Editor",
         "correct_answer": "P L",
         "marks": 1
+    },
+    {
+        "question_id": 6,
+        "question": "Balaghat konse state me hai ?",
+        "option_a": "MP",
+        "option_b": "CG",
+        "option_c": "MH",
+        "option_d": "UP",
+        "correct_answer": "MP",
+        "marks": 1
     }
 ]
